@@ -3,7 +3,7 @@
 # Laden van de packages
 source('scripts/load_packages.R')
 
-# Dit duurt even
+# Dit duurt even, vandaar cache
 conf <- yaml::read_yaml("config/passwords.yml")
 
 db <- mongo(collection = "almereparkingjson",
