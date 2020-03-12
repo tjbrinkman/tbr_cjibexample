@@ -2,7 +2,6 @@
 # issue #1 sluiten
 
 # Dit duurt even
-library(yaml)
 conf <- yaml::read_yaml("config/passwords.yml")
 
 db <- mongo(collection = "almereparkingjson",
