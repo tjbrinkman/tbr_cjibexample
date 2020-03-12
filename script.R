@@ -1,6 +1,7 @@
 library(mongolite)
 
 # Testje met GIT Commit/Push
+# issue #1 sluiten
 
 # Dit duurt even
 db <- mongo(collection = "almereparkingjson",
