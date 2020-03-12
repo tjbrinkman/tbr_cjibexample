@@ -4,11 +4,14 @@ library(mongolite)
 # issue #1 sluiten
 
 # Dit duurt even
+library(yaml)
+conf <- yaml::read_yaml("config/passwords.yml")
+
 db <- mongo(collection = "almereparkingjson",
             url = sprintf(
               "mongodb://%s:%s@%s/%s",
-              "remko", 
-              "playpass123", 
+              conf$login, 
+              conf$password, 
               "ds229186.mlab.com:29186",
               "almereparking"))
 
